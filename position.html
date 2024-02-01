@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!-- position absolute relative static fixed or sticky -->
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 1600px;
+            height: 20000px;
+            background-color: rgba(241, 154, 5, 0.345);
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            /* margin:auto; */
+            width: 150px;
+            ;
+            height: 150px;
+
+
+
+        }
+
+        #box1 {
+            /* realative:relative to its normal position */
+
+
+            position: relative;
+            top: 15px;
+            left: 15px;
+
+        }
+
+        #box2 {
+
+
+            /* absolute: relative to its parent*/
+
+            position: absolute;
+            top: 340px;
+            left: 340px;
+
+        }
+
+        #box3 {
+
+            position: sticky;
+            top: 10px;
+
+        }
+
+        #box4 {
+
+
+            /* fixed:thi will have a fixed position inspite od scrolling */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
