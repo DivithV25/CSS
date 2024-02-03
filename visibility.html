@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Zee Index</title>
+    <style>
+.box{
+    width:170px;
+    height:170px;
+    border: 2px solid black;
+}
+    #box1{
+
+       background-color: green;
+       position:relative;
+       top:34px;
+       z-index: 40;
+    }
+    #box2{
+        
+        background-color: rgb(10, 10, 10);
+        position:relative;
+        top:14px;
+        z-index:50;
+        /* The box with more z-index will overlap the other box */
+    }
+    #box3{
+        
+        background-color: rgb(0, 26, 174);
+        visibility: hidden;
+        /* This box will be hidden but it will occupy space */
+        /* display:none; in this case the box wont occupy space also */
+    }
+    #box4{
+        background-color: rgb(212, 82, 100);
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
