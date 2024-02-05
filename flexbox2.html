@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<style>
+.container{
+     height:544px;
+     width:100%;
+     border:2px solid black;
+     /* initializing flex box in the container */
+     display: flex;
+flex-direction: row;
+
+justify-content: center;
+
+ align-items:center ;
+
+
+}
+.items{
+    width:200px;
+height:200px;
+ background-color: tomato;
+ border:2px solid rgb(36,   4, 4);
+ margin:10px;
+ padding:3px;
+ 
+
+}
+#items-1{
+    flex-grow: 3;
+    flex-shrink:3 ;
+}
+#items-2{
+    /* higher the order later it shows up  later in the container */
+        order: 2;
+        /* flex-grow: 4; */
+        /* flex-shrink:4 ; */
+
+}
+#items-3{
+ flex-basis: 1200px;
+ /* flex basis acts as an width in row */
+ /* flex basis acts as an height in column */
+
+}
+#items-4{
+    align-self:  flex-end;
+    /* align-self: flex-start; */
+    /* align-items: center; */
+}
+
+</style>
+<body>
+    <h1>This is an example for flexbox</h1>
+    <div class="container">
+
+        <div class="items" id="items-1">This is first item</div>
+        <div class="items" id="items-2">This is second item</div>
+        <div class="items" id="items-3">This is third item</div>
+        <div class="items" id="items-4">This is fourth item</div>
+  
+    </div>
+    </body >
+    </html>
