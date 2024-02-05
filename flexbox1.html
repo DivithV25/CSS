@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<style>
+.container{
+     height:544px;
+     width:100%;
+     border:2px solid black;
+     /* initializing flex box in the container */
+     display: flex;
+flex-direction: row;
+/* flex-direction: column; */
+/* flex-direction: row-reverse; */
+flex-wrap: wrap;
+/* wrap is used to make the design responsive */
+/* flex-wrap: wrap-reverse; */
+/* flex-flow: row-reverse wrap; this is used to integrate flex wrap and flex direction */
+justify-content: center;
+justify-content: space-around; 
+justify-content: space-evenly; 
+justify-content: space-between; 
+/* justify-content is used for horizontal allignment of item boxes
+ */
+ align-items:flex end ;
+ align-items:flex-start ;
+ align-items:center ;
+ /* align-items is used for vertical-align: ;    */
+
+}
+.items{
+    width:200px;
+height:200px;
+ background-color: tomato;
+ border:2px solid rgb(36, 4, 4);
+ margin:10px;
+ padding:3px;
+ 
+
+}
+
+</style>
+<body>
+    <h1>This is an example for flexbox</h1>
+    <div class="container">
+
+        <div class="items" id="items-1">This is first item</div>
+        <div class="items" id="items-2">This is second item</div>
+        <div class="items" id="items-3">This is third item</div>
+        <div class="items" id="items-4">This is fourth item</div>
+        <div class="items" id="items-5">This is fifth item</div>
+        <div class="items" id="items-6">This is sixth item</div>
+    </div>
+    </body >
+    </html>
